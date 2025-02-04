@@ -1,4 +1,4 @@
-# @astrojs-aws/adapter
+# @seikada/astrojs-aws-adapter
 
 [![npm version](https://badge.fury.io/js/@astrojs-aws%2Fadapter.svg)](https://badge.fury.io/js/@astrojs-aws%2Fadapter)
 
@@ -10,18 +10,18 @@ You can install the AWS Adapter with the following `astro add` command.
 
 ```shell
 # Using NPM
-npx astro add @astrojs-aws/adapter
+npx astro add @seikada/astrojs-aws-adapter
 # using Yarn
-yarn astro add @astrojs-aws/adapter
+yarn astro add @seikada/astrojs-aws-adapter
 # Using PNPM
-pnpm astro add @astrojs-aws/adapter
+pnpm astro add @seikada/astrojs-aws-adapter
 ```
 
 After the command is executed, you the see the changed from `astro.config.mjs` or `astro.config.ts`.
 
 ```typescript
 import { defineConfig } from "astro/config"
-import aws from "@astrojs-aws/adapter"
+import aws from "@seikada/astrojs-aws-adapter"
 
 export default defineConfig({
   output: 'server',
@@ -33,11 +33,11 @@ You can also install the AWS Adapter by package manager.
 
 ```shell
 # Using NPM
-npm install -D @astrojs-aws/adapter
+npm install -D @seikada/astrojs-aws-adapter
 # Using Yarn
-yarn add -D @astrojs-aws/adapter
+yarn add -D @seikada/astrojs-aws-adapter
 # Using PNPM
-pnpm install -D @astrojs-aws/adapter
+pnpm install -D @seikada/astrojs-aws-adapter
 ```
 
 And Edit the `astro.config.mjs` or `astro.config.ts` manually.
