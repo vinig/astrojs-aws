@@ -36,9 +36,6 @@
   },
   "author": "helbing",
   "license": "MIT",
-  "engines": {
-    "node": "16.x || 18.x"
-  },
   "stability": "experimental",
   "jsii": {
     "excludeTypescript": [

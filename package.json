@@ -22,9 +22,6 @@
   ],
   "author": "helbing",
   "license": "MIT",
-  "engines": {
-    "node": "16.x || 18.x"
-  },
   "devDependencies": {
     "@commitlint/cli": "^17.6.3",
     "@commitlint/config-conventional": "^17.6.3",

@@ -36,9 +36,6 @@
   },
   "author": "helbing",
   "license": "MIT",
-  "engines": {
-    "node": "16.x || 18.x"
-  },
   "dependencies": {
     "@astrojs/webapi": "^2.1.1",
     "@middy/core": "^4.4.0"
