@@ -22,7 +22,7 @@ export default function handler(
   return async function (event): Promise<APIGatewayProxyResultV2> {
     const request = transformRequest(event)
 
-    const routeData = app.match(request, { matchNotFound: true })
+    const routeData = app.match(request)
     if (!routeData) {
       return {
         statusCode: 404,
@@ -30,7 +30,7 @@ export default function handler(
       }
     }
     // astro render
-    const rendered = await app.render(request, routeData)
+    const rendered = await app.render(request, {routeData})
 
     return transformResponse(rendered, knownBinaryMediaTypes)
   }

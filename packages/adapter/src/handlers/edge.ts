@@ -29,12 +29,12 @@ export default function handler(
 
     const request = transformRequest(event.Records[0].cf.request)
 
-    const routeData = app.match(request, { matchNotFound: true })
+    const routeData = app.match(request)
     if (!routeData) {
       return event.Records[0].cf.request
     }
     // astro render
-    const rendered = await app.render(request, routeData)
+    const rendered = await app.render(request, {routeData})
 
     return transformResponse(rendered, knownBinaryMediaTypes)
   }
